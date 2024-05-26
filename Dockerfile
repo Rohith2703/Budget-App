@@ -21,8 +21,8 @@ COPY . /myapp
 # RUN bundle exec rake assets:precompile
 
 # Expose port 3000 to the Docker host
-EXPOSE 3000
+EXPOSE 3001
 
 # Start the Rails server
-CMD ["rails", "server", "-b", "0.0.0.0"]
+CMD ["rails", "server", "-b", "0.0.0.0", "-p", "3001"]
 

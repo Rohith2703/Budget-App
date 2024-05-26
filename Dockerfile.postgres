@@ -1,0 +1,11 @@
+# Dockerfile.postgres
+FROM postgres:13
+
+# Set environment variables
+ENV POSTGRES_USER=myuser
+ENV POSTGRES_PASSWORD=mypassword
+ENV POSTGRES_DB=myapp_development
+
+# Expose port 5432 to the Docker host
+EXPOSE 5432
+
